@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Movie Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .movie-card {
+            background: #333;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Movies</h1>
+
+<div class="gallery">
+    <div class="movie-card">
+        <video controls>
+            <source src="https://drive.google.com/file/d/119w9YKdUBAA34t6LX4WynP8LLCq0wZ-r/view?usp=sharing" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="title">Swades</div>
+    </div>
+</div>
+
+</body>
+</html>
